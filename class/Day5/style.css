@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: black; */
+    background-color: red;
+    /* viewport width:*/
+    font-size: 18vw;
+    color: black;
+    /* mix-blend-mode: color-dodge; */
+    text-shadow: 10px 40px 10px red;
+    border: 20px;
+
+}
+
+.clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    /* vh = viewport height*/
+    height: 100vh;
+    /*OBJECT FIT DETERMINES HOW A VIDEO OR IMAGE WILL FIT IN THE SPAVE IT OCCUPIES */
+    object-fit: cover;
+    object-position: top left;
+}
+
+.little {
+
+    
+
+}

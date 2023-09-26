@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAIC-UChicago Design & Development Collective</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Header content here -->
+        </nav>
+    </header>
+
+    <section id="get-involved">
+        <div class="get-involved-content">
+            <h2>Get Involved</h2>
+            <p>Join our collective by filling out the registration form below:</p>
+
+            <!-- Registration Form -->
+            <form action="" method="POST">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="skills">Skills (e.g., Graphic Design, Web Development):</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <input type="submit" name="register" value="Register">
+            </form>
+            
+            <?php
+            // Handle registration when the form is submitted
+            if (isset($_POST['register'])) {
+                $fullname = $_POST['fullname'];
+                $email = $_POST['email'];
+                $skills = $_POST['skills'];
+
+                // Perform server-side validation and database storage here
+                // Example: Connect to a database and insert the registration data
+
+                // After processing, you can display a success message or redirect to a thank you page
+                echo "<p>Thank you, $fullname, for registering!</p>";
+            }
+            ?>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 SAIC-UChicago Design & Development Collective</p>
+            <!-- Social media links -->
+        </div>
+    </footer>
+</body>
+</html>
